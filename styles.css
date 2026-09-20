@@ -189,3 +189,68 @@ body {
     background-color: var(--primary-lilac);
     color: white;
 }
+
+/* Product Card */
+.product-card {
+    border: 1px solid var(--border-color);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    
+    /* Aquí agregamos el borde redondeado elevado */
+    border-radius: 16px; 
+    
+    /* Esto es clave: recorta la imagen y el fondo del botón para que respeten la curva */
+    overflow: hidden; 
+    
+    /* Opcional: una sombra muy suave para que resalten un poco más */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.product-image {
+    height: 220px;
+    background-color: var(--gray-bg);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.product-info {
+    padding: 15px;
+}
+
+.product-info h3 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.price {
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.desc {
+    font-size: 11px;
+    color: #777;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.add-to-cart {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--light-lilac);
+    /* Quitamos el borde general y solo dejamos el de arriba para que se fusione con la tarjeta */
+    border: none;
+    border-top: 1px solid var(--border-color);
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--dark-text);
+    transition: all 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: var(--primary-lilac);
+    color: white;
+}
